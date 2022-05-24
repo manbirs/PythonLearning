@@ -1,4 +1,4 @@
-"""You are working at the dealsership of Alpha Motors. A customer walked in and need help deciding the car type (Electric vs. Gasoline). You have created a program that will assist in the decision"""
+"""You are working at the dealsership of Alpha Motors. A customer walked in and needed help to decide as which car type to purchase (Electric vs. Gasoline). You have created a program that will assist in the decision"""
 
 
 print("Welcome to Alpha Motors!")
