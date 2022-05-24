@@ -1,0 +1,72 @@
+"""You are working at the dealsership of Alpha Motors. A customer walked in and need help deciding the car type (Electric vs. Gasoline). You have created a program that will assist in the decision"""
+
+
+print("Welcome to Alpha Motors!")
+#Computer input as if they are interested in Electric Car?
+Interested_in_Electric_Car = input("Are you interested in buying Electric Car?")
+if Interested_in_Electric_Car == "Y":
+    print('Good.. few more questions')
+    #Do they have space for Wall Charger?
+    Place_for_wall_charger = input("Is there a place for dedicated wall charger?")
+    if Place_for_wall_charger == 'Y':
+        EV_Sale_Price = 25000
+        Sales_Tax = 10
+        EV_Sale_Price_with_Sales_Tax = Sales_Tax / 100 * EV_Sale_Price + EV_Sale_Price
+        print(f"Good, you can buy an EV.Sales price for Electric Car is ${EV_Sale_Price} and sales tax is {Sales_Tax}%,so the total sales price for car including tax is ${EV_Sale_Price_with_Sales_Tax}")
+        Need_warranty = input("Need extended warranty on car?")
+        if Need_warranty == "Y":
+            EV_Sale_Price_with_Sales_Tax_and_Warranty =  3000 + EV_Sale_Price_with_Sales_Tax
+            print(f"Sale price with warranty is {EV_Sale_Price_with_Sales_Tax_and_Warranty}")
+        else:
+            print (f"Sale price without warranty is {EV_Sale_Price_with_Sales_Tax}")
+    else:
+        print("One last question")
+        #Is there supercharging avaialablity in their area?
+        Supercharging_availability = input("Is there supercharging in your area?")
+        if Supercharging_availability == "Y":
+            print("Good, you can buy EV")
+            EV_Sale_Price = 25000
+            Sales_Tax = 10
+            EV_Sale_Price_with_Sales_Tax = Sales_Tax / 100 * EV_Sale_Price + EV_Sale_Price
+            print(f"Good, you can buy an EV.Sales price for Electric Car is ${EV_Sale_Price} and sales tax is {Sales_Tax}%,so the total sales price for car including tax is ${EV_Sale_Price_with_Sales_Tax}")
+            Need_warranty = input("Need extended warranty on car?")
+            if Need_warranty == "Y":
+                 EV_Sale_Price_with_Sales_Tax_and_Warranty =  3000 + EV_Sale_Price_with_Sales_Tax
+                 print(f"Sale price with warranty is {EV_Sale_Price_with_Sales_Tax_and_Warranty}")
+            else:
+                print (f"Sale price without warranty is {EV_Sale_Price_with_Sales_Tax}")
+        else: 
+            print("EV is not an option")
+            
+else:
+    #If they don't like an EV, then go with Gas car
+    print('Then, Go with Gas Car')
+    #Do they care about the gas bill
+    Care_about_gas_bill = input("Do you care about gas bill?")
+    if Care_about_gas_bill == "N":
+        #if no, sports car is good recommendation
+        print('Buy Sports Car')
+        SportsCar_Sale_Price = 75000
+        Sales_Tax = 10
+        SportsCar_Sales_Price_with_Sales_Tax = Sales_Tax / 100 * SportsCar_Sale_Price + SportsCar_Sale_Price
+        print(
+            f"Sales price for Sports Car is ${SportsCar_Sale_Price} and sales tax is {Sales_Tax}%,so the total sales price for car including tax is ${SportsCar_Sales_Price_with_Sales_Tax}")
+        Need_warranty = input("Need extended warranty on car?")
+        if Need_warranty == "Y":
+            SportsCar_Sales_Price_with_Sales_Tax_and_Warranty = 3000 + SportsCar_Sales_Price_with_Sales_Tax
+            print(f"Sales price with warranty is {SportsCar_Sales_Price_with_Sales_Tax_and_Warranty}")
+        else:
+            print(f"Sales price without warranty is {SportsCar_Sales_Price_with_Sales_Tax}")
+    else:
+        print('Buy Hybrid')
+        Hybrid_Sale_Price = 50000
+        Sales_Tax = 10
+        Hybrid_Sale_Price_with_Sales_Tax = Sales_Tax / 100 * Hybrid_Sale_Price + Hybrid_Sale_Price
+        print(
+            f"Sales price for Hybrid Car is ${Hybrid_Sale_Price} and sales tax is {Sales_Tax}%,so the total sales price for car including tax is ${Hybrid_Sale_Price_with_Sales_Tax}")
+        Need_warranty = input("Need extended warranty on car?")
+        if Need_warranty == "Y":
+            Hybrid_Sale_Price_with_Sales_Tax_and_Warranty = 3000 + Hybrid_Sale_Price_with_Sales_Tax
+            print(f"Sales price with warranty is {Hybrid_Sale_Price_with_Sales_Tax_and_Warranty}")
+        else:
+            print(f"Then, total is {Hybrid_Sale_Price_with_Sales_Tax}")
