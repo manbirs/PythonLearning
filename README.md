@@ -6,12 +6,12 @@ Welcome to Python Learning using an approach of '**Code with Purpose**'.
 
 To achieve this, I have created a fictional company called **Alpha Motors**. Each assignment is tied with the requirement related to Alpha Motors. 
 
-The assignments are broken in three levels:
-- Beginner 
-- Intermediate 
-- Advanced
+The assignments are broken in three levels and each assignment's title is notated to describe the associate level.
+- Beginner (B)
+- Intermediate (I) 
+- Advanced (A)
 
-**Happy Learning!**  
+**Happy Coding**
 
 
 
