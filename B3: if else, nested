@@ -2,11 +2,11 @@
 
 
 print("Welcome to Alpha Motors!")
-#Computer input as if they are interested in Electric Car?
+#Input as if they are interested in Electric Car? 'Y' or 'N'
 Interested_in_Electric_Car = input("Are you interested in buying Electric Car?")
 if Interested_in_Electric_Car == "Y":
     print('Good.. few more questions')
-    #Do they have space for Wall Charger?
+    #Do they have space for Dedicated Wall Charger?
     Place_for_wall_charger = input("Is there a place for dedicated wall charger?")
     if Place_for_wall_charger == 'Y':
         EV_Sale_Price = 25000
