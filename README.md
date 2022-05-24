@@ -11,7 +11,7 @@ The assignments are broken in three levels and each assignment's title is notate
 - Intermediate (I) 
 - Advanced (A)
 
-**Happy Coding**
+**Happy Coding!**
 
 
 
