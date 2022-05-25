@@ -1,0 +1,30 @@
+"""Alpha Motors wants its employees to use Random Password Generator Tool. The tool will let it's employees choose desired length between 1-15 characters and will auto generate password """
+
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+# create a list of the three types
+lns = [letters, numbers, symbols ]
+
+print("Welcome to the Alpha Motors Password Generator Tool!")
+
+password_generator = int(input("Please enter your desired password length between (15 - 25)\n"))
+
+if 15 <= int(password_generator) <= 25:
+  password = ""
+  # seed(): Initialize random number generator
+  random.seed()
+
+  for i in range(password_generator):
+    # get an index of the three types
+    #randrange(): Returns a random number between the given range
+    type = random.randrange(3)
+    # now select a random character from the selected type
+    random_char = random.choice(lns[type]) 
+    password += random_char 
+  print(password)
+else:
+  # this only needs to be a message
+  print("Please try again and select range between 15 and 25")
+
